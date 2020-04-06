@@ -1,0 +1,175 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+}
+
+#header {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #fff;
+    color: #000;
+}
+
+#wrapper {
+    margin: 0;
+    width: 100%;
+    /* height: 100% or auto */
+}
+
+.row {
+    border: none;
+}
+
+.row > div {
+    border: 1px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    /* height: 100%; */
+    /* padding-bottom: auto; */
+}
+
+.row p {
+    font-size: 16px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+/* 12 columns */
+.col-1 {
+    width: 8.33%;                   /* 100% / 12 = 8.33% */
+    background-color: #ebf5fb;
+}
+
+/* 6 columns */
+.col-2 {
+    width: 16.66%;                  /* 100% / 6 = 16.66% */
+    background-color: #d6eaf8;
+}
+
+/* 4 columns */
+.col-3 {
+    width: 25%;                     /* 100% / 4 = 25% */
+    background-color: #aed6f1;
+}
+
+/* 3 columns */
+.col-4 {
+    width: 33.33%;                  /* 100% / 3 = 33.33% */
+    background-color: #85c1e9;
+}
+
+/* combined columns */
+.col-5 {
+    width: 41.66%; 
+    background-color: #5dade2;
+}
+
+/* 2 columns */
+.col-6 {
+    width: 50%;                     /* 100% / 2 = 50% */
+    background-color: #3498db;
+}
+
+/* combined columns */
+.col-7 {
+    width: 58.33%; 
+    background-color: #5499c7;
+}
+
+/* combined columns */
+.col-8 {
+    width: 66.66%; 
+    background-color: #2e86c1;
+}
+
+/* combined columns */
+.col-9 {
+    width: 75%; 
+    background-color: #2874a6;
+}
+
+/* combined columns */
+.col-10 {
+    width: 83.33%; 
+    background-color: #21618c;
+}
+
+/* combined columns */
+.col-11 {
+    width: 91.66%; 
+    background-color: #1b4f72;
+}
+
+/* 1 column - 100% */
+.col-12 {
+    width: 100%; 
+    background-color: #154360;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Responsive layout: Smartphone L */
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    
+    .row p {
+        font-size: 10px;
+    } 
+}
+
+/* Responsive layout: Smartphone M */
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    
+    .row p {
+        font-size: 9px;
+    }
+}
+
+/* Responsive layout: Smartphone S */
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+    
+    .row p {
+        font-size: 6px;
+    }
+}
